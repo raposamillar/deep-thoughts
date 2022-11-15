@@ -4,7 +4,7 @@ const Signup = () => {
   const [formState, setFormState] = useState({ username: '', email: '', password: '' });
 
   // update state based on form input changes
-  const handleChange = (event) => {
+  const handleChange = event => {
     const { name, value } = event.target;
 
     setFormState({
@@ -14,7 +14,7 @@ const Signup = () => {
   };
 
   // submit form
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async event => {
     event.preventDefault();
   };
 
